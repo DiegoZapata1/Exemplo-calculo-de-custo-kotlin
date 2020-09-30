@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Zapata"
+    tools:context=".MainActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/zapataImg"
+        android:layout_width="169dp"
+        android:layout_height="123dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30sp"
+        android:src="@drawable/zapatalogo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculo de Custo x Beneficio"
+        android:gravity="center"
+        android:layout_margin="20sp"
+        android:textSize="20sp"/>
+
+
+    <EditText
+        android:id="@+id/TxtCusto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:hint="Digite o valor de custo"
+        android:inputType="numberDecimal"
+        android:padding="10sp" />
+
+    <EditText
+        android:id="@+id/TxtVenda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:inputType="numberDecimal"
+        android:padding="10sp"
+        android:hint="Digite o valor de venda"/>
+
+    <EditText
+        android:id="@+id/TxtNomeAnotacao"
+        android:layout_width="match_parent"
+        android:layout_margin="20sp"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:hint="Digite o nome do produto"/>
+
+    <TextView
+        android:id="@+id/TxtLucro"
+        android:layout_width="match_parent"
+        android:layout_margin="20sp"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+      />
+
+    <Button
+        android:id="@+id/BtCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:text="Calcular" />
+
+    <Button
+        android:id="@+id/BtLimpar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:text="Limpar"/>
+    <Button
+        android:id="@+id/BtSalvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:text="Salvar"/>
+    <Button
+        android:id="@+id/BtAbrir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:text="Abrir"/>
+
+
+</LinearLayout>
+</ScrollView>
